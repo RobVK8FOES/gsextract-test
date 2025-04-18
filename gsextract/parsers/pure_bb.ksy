@@ -77,7 +77,7 @@ types:
         consume: false
 instances:
   matype_crib:
-    value: 0x4301
+    value: 0x6200
     doc: |
       This value is used to recover from broken bbheader streams by looking for the next valid bbheader.
       It can be manually edited or specified by modifying the generated constructor like so:
