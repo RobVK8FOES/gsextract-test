@@ -35,7 +35,7 @@ URG = 0x20
 ECE = 0x40
 CWR = 0x80
 
-def gse_parse(file, outfile, matype_crib=int(0x4301), stream=False, tcp_hijack=False, tcp_hijack_ips=None, reliable=True):
+def gse_parse(file, outfile, matype_crib=int(0x6200), stream=False, tcp_hijack=False, tcp_hijack_ips=None, reliable=True):
     with open(outfile, 'wb') as pcap_file:
         io = KaitaiStream(open(file, 'rb'))
         pcap_writer = Writer()
